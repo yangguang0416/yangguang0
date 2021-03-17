@@ -1,9 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
+int Fib(int i)		//µÝ¹é 
+{
+	if(i<2)
+	{
+		return i==0?0:1;
+	}
+	return Fib(i-1) + Fib(i-2);
+} 
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
-
-int main(int argc, char *argv[]) 
+int main(int argc, char *argv[]) //µü´ú 
 {
 	int i;
 	int a[40];
